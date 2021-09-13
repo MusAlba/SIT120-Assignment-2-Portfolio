@@ -1,0 +1,11 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  }
+  
+  .headertitle{
+    text-align:center;
+    color:#7e419a;
+  }
