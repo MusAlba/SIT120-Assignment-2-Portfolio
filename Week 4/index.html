@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Home - Student QuickCare</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   </head>
+
+   <body>
+     <div id="app">
+
+       <div class="container">
+         <h1 class="headertitle">
+           {{title}}
+         </h1>
+         <hr>
+       </div>
+       <div class="container">
+         <div class="row">
+             <table class="table table-striped ">
+               <thead class="thead-dark">
+                 <tr>
+                   <th> Student Name </th>
+                   <th>Grievance</th>
+                   <th>Resolved?</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr >
+                   <td v-for="stu in grievance1">{{stu.text}}</td>
+                   
+                 </tr>
+                 <tr>
+                    <td v-for="stu in grievance2">{{stu.text}}</td>
+                    <td ><button class="btn btn-primary">
+                    Resolve
+                    </button></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+           <div class="row">
+           
+           </div>
+       </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+   </body>
+
+ </html>
