@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Home - Student QuickCare</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+
+   <body>
+     <div id="app">
+
+       <div class="container">
+         <h1 class="title">{{title}} </h1>
+         <hr>
+       </div>
+       <div class="container">
+         <ol>
+
+           <students v-for="stu in studentlist" v-bind:names="stu" v-bind:key="stu.id"></students>
+         </ol>
+       </div>
+     </div>
+
+     <div id="app-2">
+       <p id="msg">{{ message }}</p>
+       <button class="btn btn-success" v-on:click="confirmMessage">Click to see date</button>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+   </body>
+
+ </html>
