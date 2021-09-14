@@ -1,0 +1,23 @@
+.container{
+  padding:10px;
+}
+.title{
+  color:midnightblue;
+  text-align:center;
+}
+.text-center{
+  text-align:center;
+}
+.town{
+  color:maroon;
+  font-weight:bold;
+}
+select{
+  padding:10px;
+}
+
+select:hover{
+  padding:10px;
+  border:1px solid green;
+  box-shadow:1px 2px 5px green;
+}
