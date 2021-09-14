@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Home - Student QuickCare</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+
+   <body>
+     <div id="app">
+         <h2 class="title">{{title}} </h2>
+         <hr>
+       <div class="container">
+         <select v-model.lazy="selected">
+           <option v-for="option in options" v-bind:value="option.value">
+             {{ option.text }}
+           </option>
+         </select>
+         <p>Student's town is <span class="town">{{ selected }}</span></p>
+       </div>
+       <div class="container">
+        <input type="checkbox" id="melbourne" value="Melbourne" v-model="checkedTowns">
+         <label for="melbourne">Melbourne</label>
+        <input type="checkbox" id="Geelong" value="Geelong" v-model="checkedTowns">
+         <label for="geelong">Geelong</label>
+          <input type="checkbox" id="bendigo" value="Bendigo" v-model="checkedTowns">
+         <label for="bendigo">Bendigo</label>
+         <input type="checkbox" id="apollobay" value="Apollo Bay" v-model="checkedTowns">
+         <label for="apollobay">Apollo Bay</label>
+         <br>
+         <p class="text-center">Most common town:<span class="town">
+            {{ checkedTowns }}
+         </span></p>
+       </div>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+   </body>
+
+ </html>
