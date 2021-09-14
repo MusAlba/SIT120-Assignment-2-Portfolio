@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Home - Student QuickCare</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+
+   <body>
+     <div id="head">
+       <child :text="title"></child>
+     </div>
+     
+     <div id="v-model-student" class="text-center">
+       <p>StudentName</p>
+       <user-name v-model:first-name="firstName"></user-name>
+       <user-name v-model:last-name="lastName"></user-name>
+       
+       <p>{{ firstName }} {{lastName}}</p>
+     </div>
+
+     <div id="app"></div>
+
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+   </body>
+ </html>
