@@ -1,0 +1,23 @@
+.container{
+  padding:10px;
+  margin-right:auto;
+  margin-left:20%;
+  text-align:center;
+}
+h2{
+  color:midnightblue;
+  text-align:center;
+}
+button{
+  padding:10px;
+  border-radius: 5px 20px 5px 20px;
+  background-color: darkgreen;
+  color:white;
+}
+.name{
+  color:maroon;
+  font-weight:bold;
+}
+.text-center{
+  text-align:center;
+}
